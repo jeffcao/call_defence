@@ -31,7 +31,7 @@
             android:layout_weight="1"
             android:textSize="@dimen/name_size"
             android:id="@+id/block_list_item_name"
-            android:textColor="@color/black"
+             android:textColor="@color/set_connet"
             android:singleLine="true"
             android:text="名称"
         />
@@ -60,7 +60,7 @@
         android:layout_weight="1">
         
         <TextView 
-            android:layout_height="fill_parent"
+            android:layout_height="wrap_content"
             android:layout_width="wrap_content"
             android:gravity="top"
             android:layout_weight="1"
@@ -70,7 +70,14 @@
             android:text="时间"
             
         />
-        
+        <TextView
+             android:layout_width="wrap_content" 
+            android:layout_height="wrap_content"
+            android:id="@+id/block_list_item_brond"
+            android:text="广东 深圳"
+             android:textColor="@color/time_or_content"
+            
+            />
     </LinearLayout>
     
 </LinearLayout>

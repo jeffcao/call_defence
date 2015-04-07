@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
     <dimen name="bottom_tab_padding_up">1dip</dimen>
     <dimen name="bottom_tab_padding_drawable">1dip</dimen>
     <dimen name="bottom_tab_font_size">15dip</dimen>
     <dimen name="bottom_tab_padding_down">1dip</dimen>
-     <dimen name="title_name_text">25dip</dimen>
+    <dimen name="title_name_text">25dip</dimen>
     <dimen name="bottom_text">15dip</dimen>
     <dimen name="title_button_text">15dip</dimen>
     <dimen name="bottom_button_text">15dip</dimen>
@@ -14,9 +15,13 @@
     <dimen name="common_dialog_title_text_size">25dip</dimen>
     <dimen name="common_dialog_min_width">54dip</dimen>
     <dimen name="black_list_text_size">20dip</dimen>
-    <dimen name="no_black_block_text_size">25dip</dimen>
+    <dimen name="no_black_block_text_size">22dip</dimen>
     <dimen name="manage_item_large">20dip</dimen>
     <dimen name="manage_item_small">12dp</dimen>
-     <dimen name="name_size">20sp</dimen>
-      <dimen name="number_size">16sp</dimen>
+    <dimen name="name_size">20sp</dimen>
+    <dimen name="number_size">16sp</dimen>
+    <dimen name="set_connet">16sp</dimen>
+    <dimen name="set_main_tabs">13sp</dimen>
+    <dimen name="no_white_block_text_size">22dip</dimen>
+
 </resources>

@@ -13,7 +13,9 @@
             android:id="@android:id/tabcontent"
             android:layout_width="fill_parent"
             android:layout_height="0.0dip"
-            android:layout_weight="1.0" />
+            android:layout_weight="1.0" 
+            android:background="@drawable/app_bg"
+            />
 
         <TabWidget
             android:id="@android:id/tabs"
@@ -21,10 +23,15 @@
             android:layout_height="wrap_content"
             android:layout_weight="0.0"
             android:visibility="gone" />
-
+	<LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:background="@drawable/tiltle_bg" 
+	    
+	    >
         <LinearLayout
             android:layout_width="fill_parent"
-            android:layout_height="wrap_content" >
+            android:layout_height="wrap_content" 
+         	android:background="@drawable/tiltle_bg" 
+         	 
+            >
 
             <RadioGroup
                 android:id="@+id/main_radio"
@@ -32,7 +39,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="bottom"
                 android:layout_weight="1"
-                android:background="#125483"
+              	
                 android:gravity="center_vertical"
                 android:orientation="horizontal" >
 
@@ -42,7 +49,8 @@
                     android:layout_weight="3"
                     android:drawableTop="@drawable/set_tab_selector"
                     android:enabled="true"
-                    android:paddingTop="5dip"
+                    android:paddingTop="8dip"
+                  	android:textSize="@dimen/set_main_tabs"
                     android:text="@string/set" />
 
                 <RadioButton
@@ -52,41 +60,56 @@
                     android:checked="true"
                     android:drawableTop="@drawable/black_tab_selector"
                     android:enabled="true"
-                    android:paddingTop="5dip"
+                    android:paddingTop="8dip"
+                   android:textSize="@dimen/set_main_tabs"
                     android:text="@string/blacklist" />
+                
+                <RadioButton
+                    android:id="@+id/radio_button5"
+                    style="@style/main_tab_bottom"
+                    android:layout_weight="3"
+                    android:drawableTop="@drawable/white_tab_selector"
+                    android:paddingTop="8dip"
+                    android:textSize="@dimen/set_main_tabs"
+                    android:text="@string/white_list" />
 
                 <RadioButton
                     android:id="@+id/radio_button3"
                     style="@style/main_tab_bottom"
                     android:layout_weight="3"
+                    android:paddingTop="8dip"
                     android:drawableTop="@drawable/block_tab_selector"
-                    android:paddingTop="5dip"
+                    android:textSize="@dimen/set_main_tabs"
                     android:text="@string/block_log" />
             </RadioGroup>
 
             <FrameLayout
+                	
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
                 android:layout_weight="3" 
+                android:background="@drawable/tiltle_bg" 
+               android:paddingTop="8dip"
                 android:id="@+id/maintabs_market">
 
                 <Button
                     android:id="@+id/radio_button4"
                     style="@style/main_tab_bottom"
                     android:layout_width="fill_parent"
-                    android:layout_height="fill_parent"
+                    android:layout_height="wrap_content"
                     android:drawableTop="@drawable/marke_tab_selector"
-                    android:paddingTop="5dip" />
+                    android:paddingTop="2dip" />
 
                 <TextView
                     android:layout_width="fill_parent"
                     android:layout_height="fill_parent"
                     android:gravity="bottom|center"
-                    android:paddingBottom="@dimen/bottom_tab_padding_down"
+                    android:paddingBottom="1dip"
                     android:text="精品推荐"
                     android:textColor="#ffffffff"
-                    android:textSize="@dimen/bottom_tab_font_size" />
+                    android:textSize="@dimen/set_main_tabs" />
             </FrameLayout>
+        </LinearLayout>
         </LinearLayout>
     </LinearLayout>
 

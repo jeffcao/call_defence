@@ -2,8 +2,8 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:orientation="vertical" 
-    android:background="@color/list_bg">
+    android:background="@drawable/app_bg"
+    android:orientation="vertical" >
 	
     <LinearLayout 
         android:layout_height="wrap_content"
@@ -24,74 +24,16 @@
             <TextView 
                 android:layout_height="43dip"
                 android:layout_width="fill_parent"
-                android:textColor="@color/black"
+                android:textColor="@color/set_tiltle"
                 android:text="@string/fire_mode"
-                android:textSize="20dip"
+                android:textSize="18sp"
                 android:gravity="center_vertical"
-                android:background="@drawable/tiltle_bg"
+               android:background="@drawable/sel_big_item2"
                 android:paddingLeft="10dip"/>
             
+            <!-- 允许所有人来电 -->
             <RelativeLayout 
-		        android:layout_height="30dip"
-		        android:layout_width="fill_parent"
-		        
-		        android:background="@drawable/set_linear_selector"
-		        android:id="@+id/set_main_black_linear"
-		        android:paddingLeft="10dip"
-		        android:paddingRight="10dip">
-		        
-		        <TextView 
-		            android:layout_height="wrap_content"
-		            android:layout_width="fill_parent"
-		            android:layout_weight="1"
-		            android:text="@string/set_main_fire_mode_black"
-		            android:textColor="@color/black"
-		           android:layout_centerVertical="true"
-		            android:textSize="17dip"/>
-		        
-		        <RadioButton 
-		            android:layout_height="30dip"
-		            android:layout_width="wrap_content"
-		            android:id="@+id/set_main_fire_mode_black"
-		            android:clickable="false"
-		            android:layout_alignParentRight="true"
-		           android:gravity="center_vertical"
-		          
-		        />
-		        
-		    </RelativeLayout>
-		    
-            <RelativeLayout 
-		        android:layout_height="30dip"
-		        android:layout_width="fill_parent"
-		        
-		        android:background="@drawable/set_linear_selector"
-		        android:id="@+id/set_main_contact_linear"
-		        android:paddingLeft="10dip"
-		        android:paddingRight="10dip">
-		        
-		        <TextView 
-		            android:layout_height="wrap_content"
-		            android:layout_width="fill_parent"
-		            android:layout_weight="1"
-		            android:text="@string/set_main_fire_mode_contact"
-		            android:textColor="@color/black"
-		            android:layout_centerVertical="true"
-		            android:textSize="17dip"/>
-		        
-		        <RadioButton 
-		            android:layout_height="30dip"
-		            android:layout_width="wrap_content"
-		            android:id="@+id/set_main_fire_mode_contact"
-		            android:clickable="false"
-		            android:layout_alignParentRight="true"
-		            
-		        />
-		        
-		    </RelativeLayout>
-		    
-            <RelativeLayout 
-		        android:layout_height="30dip"
+		        android:layout_height="40dip"
 		        android:layout_width="fill_parent"
 		       
 		        android:background="@drawable/set_linear_selector"
@@ -104,35 +46,172 @@
 		            android:layout_width="fill_parent"
 		            android:layout_weight="1"
 		            android:text="@string/set_main_fire_mode_all"
-		            android:textColor="@color/black"
+		             android:textColor="@color/set_connet"
 		            android:layout_centerVertical="true"
-		            android:textSize="17dip"/>
+		            android:textSize="@dimen/set_connet"/>
 		        
 		        <RadioButton 
-		            android:layout_height="30dip"
+		            android:layout_height="wrap_content"
 		            android:layout_width="wrap_content"
 		            android:id="@+id/set_main_fire_mode_all"
 		            android:clickable="false"
 		           android:layout_alignParentRight="true"
+		           android:layout_centerVertical="true"
+		            style="@style/set_radio_bt"
 		        />
 		        
 		    </RelativeLayout>
             
+            <RelativeLayout 
+		        android:layout_height="40dip"
+		        android:layout_width="fill_parent"
+		         android:background="@drawable/set_linear_selector"
+		       
+		        android:id="@+id/set_main_black_linear"
+		        android:paddingLeft="10dip"
+		        android:paddingRight="10dip">
+		        
+		        <TextView 
+		            android:layout_height="wrap_content"
+		            android:layout_width="fill_parent"
+		            android:layout_weight="1"
+		            android:text="@string/set_main_fire_mode_black"
+		            android:layout_centerVertical="true"
+		            android:textColor="@color/set_connet"
+		           
+		            android:textSize="@dimen/set_connet"/>
+		        
+		        <RadioButton 
+		          
+		            android:layout_height="wrap_content"
+		            android:layout_width="wrap_content"
+		            android:id="@+id/set_main_fire_mode_black"
+		            android:clickable="false"
+		            android:layout_alignParentRight="true"
+		          android:layout_centerVertical="true"
+		            style="@style/set_radio_bt"
+		           />
+		          <!--  android:background="@drawable/set_radio" -->
+		          
+		      
+		        
+		    </RelativeLayout>
 		    
+            <RelativeLayout 
+		        android:layout_height="40dip"
+		        android:layout_width="fill_parent"
+		        
+		        android:background="@drawable/set_linear_selector"
+		        android:id="@+id/set_main_contact_linear"
+		        android:paddingLeft="10dip"
+		        android:paddingRight="10dip">
+		        
+		        <TextView 
+		            android:layout_height="wrap_content"
+		            android:layout_width="fill_parent"
+		            android:layout_weight="1"
+		            android:text="@string/set_main_fire_mode_contact"
+		            android:textColor="@color/set_connet"
+		            android:layout_centerVertical="true"
+		            android:textSize="@dimen/set_connet"/>
+		        
+		        <RadioButton 
+		            android:layout_height="wrap_content"
+		            android:layout_width="wrap_content"
+		            android:id="@+id/set_main_fire_mode_contact"
+		            android:clickable="false"
+		            android:layout_alignParentRight="true"
+		            android:layout_centerVertical="true"
+		            style="@style/set_radio_bt"
+		            
+		        />
+		        
+		    </RelativeLayout>
 		    
+            <!-- 仅允许白名单 -->
+            <RelativeLayout 
+		        android:layout_height="40dip"
+		        android:layout_width="fill_parent"
+		        
+		        android:background="@drawable/set_linear_selector"
+		        android:id="@+id/set_main_only_white_linear"
+		        android:paddingLeft="10dip"
+		        android:paddingRight="10dip">
+		        
+		        <TextView 
+		            android:layout_height="wrap_content"
+		            android:layout_width="fill_parent"
+		            android:layout_weight="1"
+		            android:text="@string/set_main_fire_mode_only_white"
+		            android:textColor="@color/set_connet"
+		            android:layout_centerVertical="true"
+		            android:textSize="@dimen/set_connet"/>
+		        
+		        <RadioButton 
+		            android:layout_height="wrap_content"
+		            android:layout_width="wrap_content"
+		            android:id="@+id/set_main_fire_mode_only_white"
+		            android:clickable="false"
+		            android:layout_alignParentRight="true"
+		            android:layout_centerVertical="true"
+		            style="@style/set_radio_bt"
+		            
+		        />
+		        
+		    </RelativeLayout>
+		    
+            <!-- 拦截所有来电 -->
+            <RelativeLayout 
+		        android:layout_height="40dip"
+		        android:layout_width="fill_parent"
+		        
+		        android:background="@drawable/set_linear_selector"
+		        android:id="@+id/set_main_block_all_linear"
+		        android:paddingLeft="10dip"
+		        android:paddingRight="10dip">
+		        
+		        <TextView 
+		            android:layout_height="wrap_content"
+		            android:layout_width="fill_parent"
+		            android:layout_weight="1"
+		            android:text="@string/set_main_fire_mode_block_all"
+		            android:textColor="@color/set_connet"
+		            android:layout_centerVertical="true"
+		            android:textSize="@dimen/set_connet"/>
+		        
+		        <RadioButton 
+		            android:layout_height="wrap_content"
+		            android:layout_width="wrap_content"
+		            android:id="@+id/set_main_fire_mode_block_all"
+		            android:clickable="false"
+		            android:layout_alignParentRight="true"
+		            android:layout_centerVertical="true"
+		            style="@style/set_radio_bt"
+		            
+		        />
+		        
+		    </RelativeLayout>
+		    
+            
+		    
+		    <LinearLayout android:layout_height="wrap_content"
+		        android:layout_width="fill_parent"
+		        android:orientation="vertical"
+		        android:id="@+id/block_type"
+		        android:visibility="gone">
 		    <TextView 
                 android:layout_height="43dip"
                 android:layout_width="fill_parent"
-                android:textColor="@color/black"
+                 android:textColor="@color/set_tiltle"
                 android:text="@string/set_main_block_voice"
-                android:textSize="20dip"
+                android:textSize="18sp"
                 android:gravity="center_vertical"
-                android:background="@drawable/tiltle_bg"
+                android:background="@drawable/sel_big_item2"
                 android:paddingLeft="10dip"
 		        android:paddingRight="10dip"/>
 		    
 		    <RelativeLayout 
-		        android:layout_height="30dip"
+		        android:layout_height="40dip"
 		        android:layout_width="fill_parent"
 		        
 		        android:background="@drawable/set_linear_selector"
@@ -145,22 +224,24 @@
 		            android:layout_width="fill_parent"
 		            android:layout_weight="1"
 		            android:text="@string/set_main_busy_busy"
-		            android:textColor="@color/black"
+		          android:textColor="@color/set_connet"
 		            android:layout_centerVertical="true"
-		            android:textSize="17dip"/>
+		           android:textSize="@dimen/set_connet"/>
 		        
 		        <RadioButton 
-		            android:layout_height="30dip"
+		            android:layout_height="wrap_content"
 		            android:layout_width="wrap_content"
 		            android:id="@+id/set_main_busy_busy"
 		            android:clickable="false"
 		            android:layout_alignParentRight="true"
+		            android:layout_centerVertical="true"
+		            style="@style/set_radio_bt"
 		        />
 		        
 		    </RelativeLayout>
 		    
 		    <RelativeLayout 
-		        android:layout_height="30dip"
+		        android:layout_height="40dip"
 		        android:layout_width="fill_parent"
 		      
 		        android:background="@drawable/set_linear_selector"
@@ -173,22 +254,26 @@
 		            android:layout_width="fill_parent"
 		            android:layout_weight="1"
 		            android:text="@string/set_main_busy_close"
-		            android:textColor="@color/black"
+		          android:textColor="@color/set_connet"
 		            android:layout_centerVertical="true"
-		            android:textSize="17dip"/>
+		            android:textSize="@dimen/set_connet"/>
 		        
 		        <RadioButton 
-		            android:layout_height="30dip"
+		            android:layout_height="wrap_content"
 		            android:layout_width="wrap_content"
 		            android:id="@+id/set_main_busy_close"
 		            android:clickable="false"
 		            android:layout_alignParentRight="true"
+		            android:layout_centerVertical="true"
+		            style="@style/set_radio_bt"
 		        />
 		        
 		    </RelativeLayout>
 		    
+		    
+		    
 		    <RelativeLayout 
-		        android:layout_height="30dip"
+		        android:layout_height="40dip"
 		        android:layout_width="fill_parent"
 		       
 		        android:background="@drawable/set_linear_selector"
@@ -201,22 +286,24 @@
 		            android:layout_width="fill_parent"
 		            android:layout_weight="1"
 		            android:text="@string/set_main_busy_number"
-		            android:textColor="@color/black"
+		           android:textColor="@color/set_connet"
 		            android:layout_centerVertical="true"
-		            android:textSize="17dip"/>
+		            android:textSize="@dimen/set_connet"/>
 		        
 		        <RadioButton 
-		            android:layout_height="30dip"
+		            android:layout_height="wrap_content"
 		            android:layout_width="wrap_content"
 		            android:id="@+id/set_main_busy_number"
 		            android:clickable="false"
 		            android:layout_alignParentRight="true"
+		            android:layout_centerVertical="true"
+		            style="@style/set_radio_bt"
 		        />
 		        
 		    </RelativeLayout>
 		    
 		    <RelativeLayout 
-		        android:layout_height="30dip"
+		        android:layout_height="40dip"
 		        android:layout_width="fill_parent"
 		       
 		        android:background="@drawable/set_linear_selector"
@@ -229,72 +316,76 @@
 		            android:layout_width="fill_parent"
 		            android:layout_weight="1"
 		            android:text="@string/set_main_busy_die"
-		            android:textColor="@color/black"
+		           android:textColor="@color/set_connet"
 		            android:layout_centerVertical="true"
-		            android:textSize="17dip"/>
+		            android:textSize="@dimen/set_connet"/>
 		        
 		        <RadioButton 
-		            android:layout_height="30dip"
+		            android:layout_height="wrap_content"
 		            android:layout_width="wrap_content"
 		            android:id="@+id/set_main_busy_die"
 		            android:clickable="false"
 		            android:layout_alignParentRight="true"
+		            android:layout_centerVertical="true"
+		            style="@style/set_radio_bt"
 		        />
 		        
 		    </RelativeLayout>
 		    
+		    </LinearLayout>
 		    
 		    
-		    <View android:layout_height="1dip"
-		        android:layout_width="fill_parent"
-		        android:background="@color/list_line"/>
 		    <LinearLayout 
 		        android:layout_height="wrap_content"
 		        android:layout_width="fill_parent"
 		        android:orientation="horizontal"
 		        android:id="@+id/set_main_block_toast_linear"
-		        android:background="@drawable/set_linear_selector"
+		        android:background="@drawable/sel_big_item2"
 		        android:paddingLeft="10dip"
-		        android:paddingRight="10dip">
+		       android:paddingRight="10dip"
+		        android:gravity="center_vertical"
+		        >
 		        
 		        <TextView 
 		            android:layout_height="wrap_content"
 		            android:layout_width="fill_parent"
 		            android:layout_weight="1"
-		            android:textColor="@color/black"
+		           android:textColor="@color/set_connet"
 		            android:text="@string/set_main_block_toast"
-		            android:textSize="20dip"
+		            android:textSize="18sp"
 		        />
 		        
 		        <CheckBox 
+		            style="@style/set_ck_bt"
 		            android:layout_height="wrap_content"
 		            android:layout_width="wrap_content"
 		            android:id="@+id/set_main_block_toast"
 		            android:clickable="false"/>
 		        
 		    </LinearLayout>
-		    <View android:layout_height="1dip"
-		        android:layout_width="fill_parent"
-		        android:background="@color/list_line"/>
+		  
 		    <LinearLayout 
 		        android:layout_height="wrap_content"
 		        android:layout_width="fill_parent"
 		        android:orientation="horizontal"
 		        android:id="@+id/set_main_block_record_linear"
-		        android:background="@drawable/set_linear_selector"
+		         android:background="@drawable/sel_big_item2"
 		        android:paddingLeft="10dip"
-		        android:paddingRight="10dip">
+		       android:paddingRight="10dip"
+		         android:gravity="center_vertical"
+		       >
 		        
 		        <TextView 
 		            android:layout_height="wrap_content"
 		            android:layout_width="fill_parent"
 		            android:layout_weight="1"
-		            android:textColor="@color/black"
+		            android:textColor="@color/set_connet"
 		            android:text="@string/set_main_block_record"
-		            android:textSize="20dip"
+		            android:textSize="18sp"
 		        />
 		        
 		        <CheckBox 
+		             style="@style/set_ck_bt"
 		            android:layout_height="wrap_content"
 		            android:layout_width="wrap_content"
 		            android:id="@+id/set_main_block_record"
@@ -302,9 +393,272 @@
 		           	/>
 		        
 		    </LinearLayout>
-		    <View android:layout_height="1dip"
+		    
+		    <RelativeLayout 
+		        android:layout_height="wrap_content"
 		        android:layout_width="fill_parent"
-		        android:background="@color/list_line"/>
+		        android:id="@+id/set_main_block_harass"
+		        android:background="@drawable/sel_big_item2"
+		        android:paddingLeft="10dip"
+		       android:paddingRight="10dip"
+		       
+		       >
+		        
+		        <TextView 
+		            android:id="@+id/set_block_harass"
+		            android:layout_height="wrap_content"
+		            android:layout_width="wrap_content"
+		           android:textColor="@color/set_connet"
+		             android:layout_centerVertical="true"
+		            android:text="开启骚扰拦截服务"
+		            android:textSize="18sp"
+		        />
+		       
+		        <CheckBox 
+		            
+		             style="@style/set_ck_bt"
+		            android:layout_centerVertical="true"
+		            android:layout_height="wrap_content"
+		            android:layout_width="wrap_content"
+		            android:layout_alignParentRight="true"
+		            android:id="@+id/set_main_block_harass_ck"
+		            android:clickable="false"
+		           	/>
+		        
+		    </RelativeLayout>
+		 
+		    <RelativeLayout 
+		        android:layout_height="wrap_content"
+		        android:layout_width="fill_parent"
+		        android:orientation="horizontal"
+		        android:id="@+id/set_main_block_view_call"
+		        android:background="@drawable/sel_big_item2"
+		        android:paddingLeft="10dip"
+		       android:paddingRight="10dip"
+		         
+		       >
+		        
+		        <TextView 
+		            android:layout_height="wrap_content"
+		            android:layout_width="wrap_content"
+		          android:layout_centerVertical="true"
+		            android:textColor="@color/set_connet"
+		            android:text="开启来去电归属地"
+		            android:textSize="18sp"
+		        />
+		        
+		        <CheckBox 
+		             style="@style/set_ck_bt"
+		            android:layout_height="wrap_content"
+		            android:layout_width="wrap_content"
+		            android:layout_alignParentRight="true"
+		            android:id="@+id/set_main_block_view_call_ck"
+		            android:clickable="false"
+		            android:layout_centerVertical="true"
+		           	/>
+		         
+		    </RelativeLayout>
+		    
+		     <!-- 短信防火墙模式设置 -->
+		    <TextView 
+                android:layout_height="43dip"
+                android:layout_width="fill_parent"
+                android:textColor="@color/set_tiltle"
+                android:text="@string/sms_fire_mode"
+                android:textSize="18sp"
+                android:gravity="center_vertical"
+               android:background="@drawable/sel_big_item2"
+                android:paddingLeft="10dip"/>
+            
+		    <!-- 接收所有号码短信 -->
+            <RelativeLayout 
+		        android:layout_height="40dip"
+		        android:layout_width="fill_parent"
+		         android:background="@drawable/set_linear_selector"
+		       
+		        android:id="@+id/sms_receive_all_linear"
+		        android:paddingLeft="10dip"
+		        android:paddingRight="10dip">
+		        
+		        <TextView 
+		            android:layout_height="wrap_content"
+		            android:layout_width="fill_parent"
+		            android:layout_weight="1"
+		            android:text="@string/sms_receive_all_mode"
+		            android:layout_centerVertical="true"
+		            android:textColor="@color/set_connet"
+		           
+		            android:textSize="@dimen/set_connet"/>
+		        
+		        <RadioButton 
+		          
+		            android:layout_height="wrap_content"
+		            android:layout_width="wrap_content"
+		            android:id="@+id/sms_receive_all_btn"
+		            android:clickable="false"
+		            android:layout_alignParentRight="true"
+		          android:layout_centerVertical="true"
+		            style="@style/set_radio_bt"
+		           />
+		          <!--  android:background="@drawable/set_radio" -->
+		          
+		      
+		        
+		    </RelativeLayout>
+		    
+            <!-- 拦截黑名单号码短信 -->
+            <RelativeLayout 
+		        android:layout_height="40dip"
+		        android:layout_width="fill_parent"
+		        
+		        android:background="@drawable/set_linear_selector"
+		        android:id="@+id/sms_block_black_linear"
+		        android:paddingLeft="10dip"
+		        android:paddingRight="10dip">
+		        
+		        <TextView 
+		            android:layout_height="wrap_content"
+		            android:layout_width="fill_parent"
+		            android:layout_weight="1"
+		            android:text="@string/sms_block_black_mode"
+		            android:textColor="@color/set_connet"
+		            android:layout_centerVertical="true"
+		            android:textSize="@dimen/set_connet"/>
+		        
+		        <RadioButton 
+		            android:layout_height="wrap_content"
+		            android:layout_width="wrap_content"
+		            android:id="@+id/sms_block_black_btn"
+		            android:clickable="false"
+		            android:layout_alignParentRight="true"
+		            android:layout_centerVertical="true"
+		            style="@style/set_radio_bt"
+		            
+		        />
+		        
+		    </RelativeLayout>
+		    
+            <!-- 拦截黑名单及陌生号码短信 -->
+            <RelativeLayout 
+		        android:layout_height="40dip"
+		        android:layout_width="fill_parent"
+		       
+		        android:background="@drawable/set_linear_selector"
+		        android:id="@+id/sms_block_black_stranger_linear"
+		        android:paddingLeft="10dip"
+		        android:paddingRight="10dip">
+		        
+		        <TextView 
+		            android:layout_height="wrap_content"
+		            android:layout_width="fill_parent"
+		            android:layout_weight="1"
+		            android:text="@string/sms_block_black_stranger_mode"
+		             android:textColor="@color/set_connet"
+		            android:layout_centerVertical="true"
+		            android:textSize="@dimen/set_connet"/>
+		        
+		        <RadioButton 
+		            android:layout_height="wrap_content"
+		            android:layout_width="wrap_content"
+		            android:id="@+id/sms_block_black_stranger_btn"
+		            android:clickable="false"
+		           android:layout_alignParentRight="true"
+		           android:layout_centerVertical="true"
+		            style="@style/set_radio_bt"
+		        />
+		        
+		    </RelativeLayout>
+		    
+            <!-- 仅允许白名单 -->
+            <RelativeLayout 
+		        android:layout_height="40dip"
+		        android:layout_width="fill_parent"
+		       
+		        android:background="@drawable/set_linear_selector"
+		        android:id="@+id/sms_block_only_white_linear"
+		        android:paddingLeft="10dip"
+		        android:paddingRight="10dip">
+		        
+		        <TextView 
+		            android:layout_height="wrap_content"
+		            android:layout_width="fill_parent"
+		            android:layout_weight="1"
+		            android:text="@string/sms_block_only_white_mode"
+		             android:textColor="@color/set_connet"
+		            android:layout_centerVertical="true"
+		            android:textSize="@dimen/set_connet"/>
+		        
+		        <RadioButton 
+		            android:layout_height="wrap_content"
+		            android:layout_width="wrap_content"
+		            android:id="@+id/sms_block_only_white_btn"
+		            android:clickable="false"
+		           android:layout_alignParentRight="true"
+		           android:layout_centerVertical="true"
+		            style="@style/set_radio_bt"
+		        />
+		        
+		    </RelativeLayout>
+		    
+            <!-- 拦截所有短信选项 -->
+            <RelativeLayout 
+		        android:layout_height="40dip"
+		        android:layout_width="fill_parent"
+		       
+		        android:background="@drawable/set_linear_selector"
+		        android:id="@+id/sms_block_all_linear"
+		        android:paddingLeft="10dip"
+		        android:paddingRight="10dip">
+		        
+		        <TextView 
+		            android:layout_height="wrap_content"
+		            android:layout_width="fill_parent"
+		            android:layout_weight="1"
+		            android:text="@string/sms_block_all_mode"
+		             android:textColor="@color/set_connet"
+		            android:layout_centerVertical="true"
+		            android:textSize="@dimen/set_connet"/>
+		        
+		        <RadioButton 
+		            android:layout_height="wrap_content"
+		            android:layout_width="wrap_content"
+		            android:id="@+id/sms_block_all_btn"
+		            android:clickable="false"
+		           android:layout_alignParentRight="true"
+		           android:layout_centerVertical="true"
+		            style="@style/set_radio_bt"
+		        />
+		        
+		    </RelativeLayout>
+            
+		    <RelativeLayout 
+		        android:layout_height="wrap_content"
+		        android:layout_width="fill_parent"
+		        android:orientation="horizontal"
+		        android:id="@+id/set_sms_keyword"
+		        android:background="@drawable/sel_big_item2"
+		        android:paddingLeft="10dip"
+		       android:paddingRight="10dip"
+		        android:gravity="center_vertical"
+		        
+		        >
+		        
+		        <TextView 
+		           
+		             android:layout_height="wrap_content"
+		            android:layout_width="wrap_content"
+		          android:textSize="18sp"
+		            android:text="设置关键字"
+		           
+		            />
+		        <ImageView android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_alignParentRight="true"
+		            android:background="@drawable/set_keyword_logo"
+		            />
+		       
+		         
+		    </RelativeLayout>
 		</LinearLayout>
     </ScrollView>
 

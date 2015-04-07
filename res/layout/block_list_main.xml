@@ -34,12 +34,12 @@
    	    android:layout_width="fill_parent"
    	    android:layout_weight="1"
    	    android:orientation="vertical"
-   	    android:background="@color/app_bg">
+   	    android:background="@drawable/app_bg">
         <LinearLayout 
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:id="@+id/bt_help"
-            android:background="@drawable/top_back3"
+            android:background="@drawable/below_bg"
             android:gravity="center"
             >
             <Button 
@@ -49,7 +49,7 @@
               
                 
                 android:textSize="18sp"
-                android:background="@drawable/block_call_bt2"
+                android:background="@drawable/block_call_bt1"
                 android:id="@+id/block_call_bt"
                 />
 
@@ -62,7 +62,7 @@
                 android:textSize="18sp"
               
                  android:id="@+id/block_sms_bt"
-                 android:background="@drawable/block_sms_bt1"
+                 android:background="@drawable/block_sms_bt2"
                  />
 
 			</LinearLayout>
@@ -94,6 +94,7 @@
                 android:id="@+id/block_list_main_no_black"
                 android:text="暂无来电拦截记录"
                 android:visibility="invisible"
+                android:textColor="@color/set_connet"
                 android:textSize="@dimen/no_black_block_text_size"
             />
    	    <TextView 
@@ -104,18 +105,25 @@
                 android:id="@+id/block_list_no_sms"
                 android:text="暂无短信拦截记录"
                 android:visibility="gone"
+                  android:textColor="@color/set_connet"
                 android:textSize="@dimen/no_black_block_text_size"
             />
    	   
    	</RelativeLayout>
     
-   	
+   	<LinearLayout 
+   	    android:layout_width="fill_parent"
+   	    android:layout_height="45dip"
+   	    android:background="@drawable/app_bg"
+   	    >
    	  <Button  android:layout_width="fill_parent" 
    	      android:layout_height="45dip" 
-   	     android:text="清除日志"
-   	      android:id="@+id/block_list_main_clear_log"/>  
+   	    	android:text="清除日志"
+   	      android:id="@+id/block_list_main_clear_log"
+   	      android:background="@drawable/block_list_main_bt_bg"
+   	      />  
    	    
-  
+  </LinearLayout>
    	<!-- <ImageView 
    	    android:layout_height="wrap_content"
    	    android:layout_width="fill_parent"

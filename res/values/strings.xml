@@ -1,5 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    
+    <!-- 白名单 -->
+    <string name="white_list">白名单</string>
+    <string name="no_white_user">点击右上角按钮添加白名单</string>
+    <string name="modify_white_user_name">名称:</string>
+    <string name="modify_white_user_mobile">电话:</string>
+    <string name="manual_add_whitelist">手动添加号码</string>
+    <string name="add_whitelist">添加白名单</string>
+    <string name="set_main_fire_mode_only_white">仅允许白名单</string>
+    <string name="sms_block_only_white_mode">仅接收白名单号码短信</string>
+    
+    <!-- 联系人多选 -->
+    <string name="notify_sel_one">请至少选择一个用户</string>
+    <string name="notify_add_black_ok">添加黑名单成功</string>
+    <string name="notify_add_white_ok">添加白名单成功</string>
+    
+    <!-- 来去电归属地文件包下载状态 -->
+    <string name="progress">正在下载中....已完成progress%</string>
+    <string name="download_success">电话归属地文件包已下载完成</string>
+    <!-- NO_SDCARD, NO_NET, SDCARD_SPACE_UNAVAILABLE, NET_INTERRUPT, OTHER -->
+    <string name="download_no_sdcard">SD卡状态异常，下载失败</string>
+    <string name="download_no_net">未连接网络，无法下载</string>
+    <string name="download_sdcard_space_unavailable">SD卡空间不足，无法下载</string>
+    <string name="download_net_interrupt">网络连接中断，下载来电归属地文件包失败</string>
+    <string name="download_other">下载来电归属地文件包失败</string>
+    
+    <!-- 来去电归属地文件包下载提醒 -->
+    <string name="ask_download_title">来去电归属地文件下载提醒</string>
+    <string name="ask_download_content">用户您好：\n
+		开启前需下载电话号码归属地文件包至本手机,未下载此文件包无法设置"开启来去电归属地"项.\n
+		请点击"下载",下载后将自动安装.\n
+		建议在连接WIFI网络时下载.\n
+		文件包大小：3~4MB
+	</string>
+    <string name="ask_download_yes">下载</string>
+    <string name="ask_download_no">取消</string>
+    <!-- 来去电归属地文件包更新提醒 -->
+     <string name="ask_update_title">来去电归属地文件更新提醒</string>
+    <string name="ask_update_content">用户您好：\n
+		来电归属地数据包有更新,下载后将自动安装.\n
+		建议在连接WIFI网络时下载.\n
+		大小：3~4MB\n
+		请点击按钮"下载"更新.
+	</string>
+    
+    <!-- 短信防火墙模式设置 -->
+    <string name="sms_fire_mode">短信防火墙模式</string>
+    <string name="sms_receive_all_mode">接收所有号码短信</string>
+    <string name="sms_block_black_mode">拦截黑名单号码短信</string>
+    <string name="sms_block_black_stranger_mode">拦截黑名单及陌生号码短信</string>
+    <string name="sms_block_all_mode">不想被打扰，拦截所有短信</string>
+    
 <string name="main_home">主页</string>
     <string name="main_news">提及</string>
     <string name="set_tab">设置</string>
@@ -17,15 +69,16 @@
     <string name="system_set">设置</string>
     <string name="set_block_type">设置拦截方式</string>
     <string name="block_type_default_value">3</string>
-    <string name="fire_mode">防火墙模式</string>
+    <string name="fire_mode">电话防火墙模式</string>
     <string name="fire_mode_key">fire_mode_key</string>
+    <string name="sms_fire_mode_key">sms_fire_mode_key</string>
     <string name="set_fire_mode">设置防火墙模式</string>
     <string name="default_fire_mode">1</string>
     <string name="about_id">about_id</string>
     <string name="native_prefix_key">native_prefix_key</string>
     <string name="native_block_key">native_block_key</string>
     <string name="native_prefix_name_key">native_prefix_name_key</string>
-    <string name="about_version">来电卫士 版本V3.0</string>
+    <string name="about_version">蓝盾手机卫士 版本V4.0</string>
     <string name="about_url">http://www.tblin.com/fhq/</string>
     <string name="about_copyright">
 	    copyright ©深圳市天宝林科技有限公司
@@ -75,15 +128,17 @@
     <string name="set">设置</string>
     <string name="share">分享</string>
     <string name="share_id">share_id</string>
-    <string name="share_content">推荐给大家一个不错的小工具“来电卫士”，实用又方便，真的很赞哦！http://www.tblin.com/fhq/wap/ </string>
+    <string name="share_content">推荐给大家一个不错的小工具“蓝盾手机卫士”，实用又方便，真的很赞哦！http://www.tblin.com/fhq/wap/ </string>
     <string name="clear_log">清除日志</string>
-    <string name="app_name">来电卫士</string>
+    <string name="app_name">蓝盾手机卫士</string>
     <string name="record_when_block">拦截后记录</string>
     <string name="record_when_block_key">record_when_block_key</string>
     <string name="manual_add_blacklist">手动添加号码</string>
+    
     <string name="set_main_fire_mode_black">拦截黑名单来电</string>
-    <string name="set_main_fire_mode_contact">只允许联系人来电</string>
+    <string name="set_main_fire_mode_contact">拦截黑名单及陌生号码来电</string>
     <string name="set_main_fire_mode_all">允许所有人来电</string>
+    <string name="set_main_fire_mode_block_all">不想被打扰，拦截所有来电</string>
     <string name="set_main_busy_busy">提示忙音</string>
     <string name="set_main_busy_number">提示空号</string>
     <string name="set_main_busy_close">提示关机</string>
@@ -103,4 +158,8 @@
     <string name="update_time_key">update_time_key</string>
     <string name="last_intent_time">last_intent_time</string>
     <string name="markeview">推荐列表</string>
+    <string name="exit_title">退出程序</string>
+    <string name="exit_notify">确定退出程序吗？</string>
+    <string name="exit_down_notify">有任务正在下载，确定退出程序吗？</string>
+    <string name="exit_add_notify">终生免费的蓝盾手机卫士，需要您的支持！</string>
 </resources>

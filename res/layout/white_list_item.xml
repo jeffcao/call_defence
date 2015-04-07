@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingTop="8dip"
+    android:paddingBottom="8dip"
+    android:background="@drawable/set_linear_selector"
+    >
+        <ImageView 
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/white_list_item_header"
+            />
+      
+        <TextView 
+            android:layout_toRightOf="@id/white_list_item_header"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:textSize="@dimen/name_size"
+            android:id="@+id/white_list_item_name"
+            android:textColor="@color/set_connet"
+            android:singleLine="true"
+            android:text="名称"
+            android:layout_marginTop="3dip"
+            android:layout_marginLeft="20dip"
+        />
+        
+        <TextView 
+            android:layout_below="@id/white_list_item_name"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/white_list_item_mobile"
+         	android:textSize="@dimen/number_size"
+            android:textColor="@color/time_or_content"
+            android:singleLine="true"
+            android:maxEms="8"
+            android:layout_marginTop="3dip"
+            android:text="号码"
+            android:layout_alignLeft="@+id/white_list_item_name"        />
+       
+    <TextView 
+           android:layout_alignParentRight="true"
+            android:id="@+id/white_list_item_adress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="广东深圳-移动"
+            android:layout_marginRight="20dip"
+            android:textColor="@color/time_or_content"
+            android:layout_alignBottom="@+id/white_list_item_mobile"
+            android:layout_marginBottom="3dip"
+            />
+</RelativeLayout>

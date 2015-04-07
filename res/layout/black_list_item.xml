@@ -50,11 +50,6 @@
         
       
     </LinearLayout> -->
-      <RelativeLayout 
-        android:layout_height="60dip"
-        android:layout_width="200dip"
-        android:paddingLeft="10dip"
-       >
         
         
         <ImageView 
@@ -70,38 +65,47 @@
             android:layout_weight="1"
             android:textSize="@dimen/name_size"
             android:id="@+id/black_list_item_name"
-            android:textColor="@color/black"
+            android:textColor="@color/set_connet"
             android:singleLine="true"
             android:text="名称"
             android:layout_marginTop="3dip"
-       
+            android:layout_marginLeft="20dip"
         />
         
         <TextView 
             android:layout_below="@id/black_list_item_name"
-            android:layout_height="fill_parent"
-            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
             android:layout_weight="1"
             android:id="@+id/black_list_item_mobile"
          	android:textSize="@dimen/number_size"
             android:textColor="@color/time_or_content"
             android:singleLine="true"
+            android:maxEms="8"
             android:layout_marginTop="3dip"
             android:text="号码"
-        />
+            android:layout_alignLeft="@+id/black_list_item_name"        />
        
-    </RelativeLayout>
       <TextView 
-           android:layout_alignParentLeft="true"
+           android:layout_alignParentRight="true"
             android:id="@+id/black_list_item_type"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="未作拦截"
+            android:text="来电拦截+短信"
             android:textColor="@color/time_or_content"
-         	android:layout_marginTop="30dip"
-           android:layout_marginLeft="200dip"
-           
-           
+            android:layout_marginRight="20dip"
+            android:layout_alignBottom="@+id/black_list_item_name"
+           android:layout_marginBottom="3dip"
             />
-    
+    <TextView 
+           android:layout_alignParentRight="true"
+            android:id="@+id/black_list_item_adress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="广东深圳-移动"
+            android:layout_marginRight="20dip"
+            android:textColor="@color/time_or_content"
+            android:layout_alignBottom="@+id/black_list_item_mobile"
+            android:layout_marginBottom="3dip"
+            />
 </RelativeLayout>

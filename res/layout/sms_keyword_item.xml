@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/set_linear_selector"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:paddingBottom="5dip"
+    android:paddingTop="5dip" >
+
+    <TextView
+        android:id="@+id/sms_keyword_content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:layout_marginLeft="20dip"
+        android:textSize="@dimen/number_size"
+        android:textColor="@color/time_or_content"
+        android:text="关键字" />
+
+</LinearLayout>

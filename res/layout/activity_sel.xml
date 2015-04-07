@@ -1,0 +1,117 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:background="@drawable/app_bg">
+
+    <!-- android:background="@drawable/app_bg" -->
+
+    <RelativeLayout
+        android:id="@+id/sel_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/top_01" >
+        
+        <EditText
+        android:id="@+id/sel_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dip"
+        android:hint="搜索联系人"
+        android:layout_marginTop="12dip"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="25dip"
+        android:textSize="14sp"
+        android:ems="6"
+        android:background="@drawable/sel_edit_bg"/>
+
+        <ImageView
+            android:id="@+id/sel_title_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="25dip"
+            android:layout_marginTop="12dip"
+            android:src="@drawable/heimingdan_biaoti" />
+        
+    </RelativeLayout>
+
+    
+    
+    <RelativeLayout
+        android:id="@+id/sel_cb_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_below="@+id/sel_title"
+        android:background="@drawable/top_02">
+
+        <CheckBox
+            android:id="@+id/sel_block_call"
+            style="@style/set_radio_bt_cb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:checked="true"
+            android:text="拦截来电"
+            android:textColor="@android:color/white" />
+
+        <CheckBox
+            android:id="@+id/sel_block_sms"
+            style="@style/set_radio_bt_cb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/sel_block_call"
+            android:layout_toRightOf="@id/sel_block_call"
+            android:layout_marginLeft="40dip"
+            android:checked="true"
+            android:text="拦截短信"
+            android:textColor="@android:color/white" />
+        
+    </RelativeLayout>
+
+    <ImageView android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:src="@drawable/top_03"
+        android:id="@+id/sel_bg_line"
+        android:layout_alignBottom="@id/sel_cb_layout"/>
+
+    
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/sel_bg_line"
+        android:cacheColorHint="@null"
+        android:divider="@color/list_line"
+        android:dividerHeight="0.5dip" 
+        android:layout_above="@+id/sel_btn">
+    </ListView>
+    
+    <LinearLayout android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:id="@id/sel_btn"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+        <Button
+        android:id="@+id/sel_confirm"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="确定" 
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:background="@drawable/sel_btn_selector"/>
+        <Button
+        android:id="@+id/sel_cancel"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="取消" 
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:background="@drawable/sel_btn_selector"/>
+    </LinearLayout>
+    
+
+</RelativeLayout>

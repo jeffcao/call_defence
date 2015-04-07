@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
 
     <style name="dialog" parent="@android:style/Theme.Dialog">
         <item name="android:windowBackground">@android:color/transparent</item>
@@ -11,8 +11,8 @@
     </style>
 
     <style name="Theme.preload" parent="android:Theme">
-        <item name="android:windowBackground">@color/pre_load</item>
-        <item name="android:windowNoTitle">true</item>
+       <item name="android:windowBackground">@color/pre_load</item> 
+        <item name="android:windowNoTitle">true</item> 
     </style>
 
     <style name="dialogTitle" parent="@android:style/TextAppearance.DialogWindowTitle">
@@ -27,11 +27,45 @@
         <item name="android:background">@drawable/tab_btn_bg</item>
         <item name="android:paddingBottom">@dimen/bottom_tab_padding_down</item>
         <item name="android:layout_width">fill_parent</item>
-        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_height">fill_parent</item>
         <item name="android:button">@null</item>
         <item name="android:singleLine">true</item>
-        <item name="android:drawablePadding">@dimen/bottom_tab_padding_drawable</item>
+     	<item name="android:paddingTop">3dip</item>
         <item name="android:layout_weight">1.0</item>
+    </style>
+    
+     <style name="set_radio_bt">
+        
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/set_radio</item>
+      
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:button">@null</item>
+       
+     	
+    </style>
+    <style name="set_radio_bt_cb">
+        
+        <item name="android:gravity">center</item>
+        
+      
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:button">@drawable/set_radio</item>
+       
+     	
+    </style>
+     <style name="set_ck_bt">
+        
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/set_ch_bt</item>
+      
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:button">@null</item>
+       
+     	
     </style>
 
 </resources>

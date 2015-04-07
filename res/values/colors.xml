@@ -8,7 +8,9 @@
     <color name="black_block_list_text_color">#908890</color>
     <color name="tab_normal">#3a599a</color>
     <color name="tab_pressed">#aeeeee</color>
-    <color name="tab_checked">#125483</color>
+    
+    <color name="tab_checked">#000</color>
+    
     <color name="pre_load">#b7d9ed</color>
     <color name="set_linear_click">#87ceeb</color>
     <color name="set_main_title">#708090</color>
@@ -25,9 +27,11 @@
     <color name="quick_action_btn_pressed">#000000</color>
     <color name="list_press">#a5efff</color>
     <color name="bt_select">#a5efff</color>
-    <color name="list_bg">#eeeeee</color>
+    <color name="list_bg">#80804C</color>
     <color name="list_line">#d7d8dc</color>
     <color name="block_bt_select">#125486</color>
     <color name="app_bg" >#eeeeee</color>
-     <color name="time_or_content" >#abaaa6</color>
+     <color name="time_or_content" >#717171</color>
+     <color name="set_tiltle">#00ffff</color>
+      <color name="set_connet">#ffffff</color>
 </resources>

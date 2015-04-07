@@ -1,0 +1,40 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              android:background="@drawable/set_linear_selector"
+              android:paddingLeft="10dip"
+              android:paddingRight="10dip">
+    <TextView
+            android:id="@+id/contact_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="sweetie"
+            android:paddingLeft="2dip"
+            android:textSize="20sp"
+            android:textColor="@android:color/white"/>
+
+    <CheckBox
+        android:id="@+id/contact_check_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:focusable="false"   
+        android:focusableInTouchMode="false"   
+        android:clickable="false" 
+        style="@style/set_ck_bt"/>
+
+    <TextView
+            android:id="@+id/contact_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:layout_alignLeft="@id/contact_name"
+            android:paddingBottom="4dip"
+            android:text="15210165256"
+            android:layout_below="@id/contact_name"
+            android:textSize="14sp"
+            android:textColor="@android:color/white"/>
+</RelativeLayout>
