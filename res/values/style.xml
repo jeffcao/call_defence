@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">false</item>半透明        
+        <item name="android:windowIsFloating">true</item>是否浮现在activity之上        
+        <item name="android:windowTitleStyle">@style/dialogTitle</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.preload" parent="android:Theme">
+        <item name="android:windowBackground">@color/pre_load</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="dialogTitle" parent="@android:style/TextAppearance.DialogWindowTitle">
+        <item name="android:gravity">left</item>
+    </style>
+
+    <style name="main_tab_bottom">
+        <item name="android:textSize">@dimen/bottom_tab_font_size</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:background">@drawable/tab_btn_bg</item>
+        <item name="android:paddingBottom">@dimen/bottom_tab_padding_down</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:button">@null</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:drawablePadding">@dimen/bottom_tab_padding_drawable</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+
+</resources>

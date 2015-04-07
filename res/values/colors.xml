@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="title_back">#3a599a</color>
+    <color name="bottom_back">#36648b</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#383838</color>
+    <color name="dialog_title_back">#282828</color>
+    <color name="black_block_list_text_color">#908890</color>
+    <color name="tab_normal">#3a599a</color>
+    <color name="tab_pressed">#aeeeee</color>
+    <color name="tab_checked">#125483</color>
+    <color name="pre_load">#b7d9ed</color>
+    <color name="set_linear_click">#87ceeb</color>
+    <color name="set_main_title">#708090</color>
+    <color name="list_normal">#f7f9ff</color>
+    <color name="black2">#4b5055</color>
+    <color name="title_back_normal">#eef0f5</color>
+   <color name="title_back_press">#3eadde</color>
+   <color name="progress">#49b6fb</color>
+   <color name="progress_bg">#bcc4ca</color>
+    <color name="stroke_bg">#96acb9</color>
+    <color name="bt_normal">#eef0f5</color>
+    <color name="quick_action">#707070</color>
+    <color name="quick_action_btn">#f7f7ff</color>
+    <color name="quick_action_btn_pressed">#000000</color>
+    <color name="list_press">#a5efff</color>
+    <color name="bt_select">#a5efff</color>
+    <color name="list_bg">#eeeeee</color>
+    <color name="list_line">#d7d8dc</color>
+    <color name="block_bt_select">#125486</color>
+    <color name="app_bg" >#eeeeee</color>
+     <color name="time_or_content" >#abaaa6</color>
+</resources>

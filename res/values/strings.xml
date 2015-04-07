@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string name="main_home">主页</string>
+    <string name="main_news">提及</string>
+    <string name="set_tab">设置</string>
+    <string name="menu_search">拦截日志</string>
+    <string name="add_blacklist">添加黑名单</string>
+    <string name="close">关闭</string>
+    <string name="open">打开</string>
+    <string name="blacklist">黑名单</string>
+    <string name="block_log">拦截日志</string>
+    <string name="about">关于</string>
+    <string name="toast_when_block">拦截后在通知栏提示</string>
+    <string name="toast_when_block_key">toast_when_block_key</string>
+    <string name="block_type">拦截方式</string>
+    <string name="block_type_key">block_type_key</string>
+    <string name="system_set">设置</string>
+    <string name="set_block_type">设置拦截方式</string>
+    <string name="block_type_default_value">3</string>
+    <string name="fire_mode">防火墙模式</string>
+    <string name="fire_mode_key">fire_mode_key</string>
+    <string name="set_fire_mode">设置防火墙模式</string>
+    <string name="default_fire_mode">1</string>
+    <string name="about_id">about_id</string>
+    <string name="native_prefix_key">native_prefix_key</string>
+    <string name="native_block_key">native_block_key</string>
+    <string name="native_prefix_name_key">native_prefix_name_key</string>
+    <string name="about_version">来电卫士 版本V3.0</string>
+    <string name="about_url">http://www.tblin.com/fhq/</string>
+    <string name="about_copyright">
+	    copyright ©深圳市天宝林科技有限公司
+	</string>
+	<string name="about_protocol">
+	    请仔细阅读《免责声明》
+	</string>
+    <string name="full_serve_protocol">
+		免责声明\n\n
+
+		任何使用深圳市天宝林科技有限公司（以下简称“天宝林”）相应产品的用户均应仔细阅读本声明，用户可选择不使用本产品，用户使用本产品的行为将被视为对本声明全部内容的认可。 除天宝林注明之服务条款外，其他一切因使用天宝林产品而引致之任何意外、疏忽、合约毁坏、诽谤、版权或知识产权侵犯及其所造成的损失，天宝林概不负责，亦不承担任何法律责任。\n
+
+		任何透过天宝林产品浏览的网页及得到之资讯、产品及服务，天宝林对其合法性概不负责，亦不承担任何法律责任。\n
+
+		用户对使用天宝林产品自行承担风险，天宝林不做任何形式的保证, 不保证结果满足用户的要求，不保证服务不中断，对结果的安全性、正确性、及时性、合法性均不做担保。因网络状况、通讯线路等任何技术原因而导致用户不能正常使用，天宝林不承担任何法律责任。\n
+
+		天宝林尊重并保护所有使用用户的个人隐私权，用户注册和使用过程中涉及的用户名、手机号码、电子邮件地址、电子邮件内容、Cookie等个人资料，非经用户亲自许可或根据相关法律的强制性规定，天宝林绝对不会主动地泄露给第三方。\n
+
+		任何单位或个人认为通过天宝林所提供的内容可能涉嫌侵犯其合法权益，应该及时向天宝林书面反馈，并提供身份证明、权属证明及详细侵权情况证明，我们在收到上述法律文件后，将会尽快移除被控侵权内容。\n\n
+	    
+	    联系我们\n\n
+	    
+	    您有任何问题或意见，欢迎随时联系我们。\n
+	    
+	    我们的工作时间为：8：30a.m－17:30p.m\n
+	    
+	    地址：深圳市福田区滨河大道上沙创新科技园五栋三楼3C02\n
+	    
+	    邮编：518000\n
+	    
+	    电话：0755-83409668\n
+	    
+	    传真：0755-83417901\n
+	    
+	    网站：http://www.tblin.com/fhq/
+	    
+	</string>
+    <string name="common_dialog_title">温馨提示</string>
+    <string name="be_sure">确定</string>
+    <string name="modify_black_user_name">名称:</string>
+    <string name="modify_black_user_mobile">电话:</string>
+    <string name="yes">确定</string>
+    <string name="no">取消</string>
+    <string name="no_black_user">点击右上角按钮添加黑名单</string>
+    <string name="no_block_event_text">暂无来电拦截记录</string>
+    <string name="add_black_introduce">在号码中,您可输入前3位即可,例如：138,即可拦截138开头的来电，您也可以添加城市区号来进行拦截.</string>
+    <string name="set">设置</string>
+    <string name="share">分享</string>
+    <string name="share_id">share_id</string>
+    <string name="share_content">推荐给大家一个不错的小工具“来电卫士”，实用又方便，真的很赞哦！http://www.tblin.com/fhq/wap/ </string>
+    <string name="clear_log">清除日志</string>
+    <string name="app_name">来电卫士</string>
+    <string name="record_when_block">拦截后记录</string>
+    <string name="record_when_block_key">record_when_block_key</string>
+    <string name="manual_add_blacklist">手动添加号码</string>
+    <string name="set_main_fire_mode_black">拦截黑名单来电</string>
+    <string name="set_main_fire_mode_contact">只允许联系人来电</string>
+    <string name="set_main_fire_mode_all">允许所有人来电</string>
+    <string name="set_main_busy_busy">提示忙音</string>
+    <string name="set_main_busy_number">提示空号</string>
+    <string name="set_main_busy_close">提示关机</string>
+    <string name="set_main_busy_die">提示停机</string>
+    <string name="set_main_block_toast">拦截后在通知栏提示</string>
+    <string name="set_main_block_record">拦截后记录</string>
+    <string name="set_main_block_voice">拦截返回音</string>
+    <string name="block_type_guide">
+		1.该功能设置作用为：改变对方所听到的提示音，且应用于所有用户。\n
+		如：A号码不在黑名单，当A拨打您的电话时，此时您正在通话或直接挂掉，A听到的 是您预先设置的提示音.\n\n
+		
+		2.若您手机信号不稳定，该设置可能不成功。\n\n
+		
+		3.如要恢复默认设置，只需要点击提示忙音即可。\n\n
+		是否继续呢？
+	</string>
+    <string name="update_time_key">update_time_key</string>
+    <string name="last_intent_time">last_intent_time</string>
+    <string name="markeview">推荐列表</string>
+</resources>

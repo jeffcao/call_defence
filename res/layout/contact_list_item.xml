@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingTop="5dip"
+    android:paddingBottom="5dip"
+    >
+        
+        <TextView 
+            android:layout_height="fill_parent"
+            android:layout_width="fill_parent"
+            android:gravity="center"
+            android:layout_weight="6"
+            android:singleLine="true"
+            android:id="@+id/contact_list_item_name"
+            android:textSize="20dip"
+            android:textColor="@color/black_block_list_text_color"
+        />
+        
+        <TextView 
+            android:layout_height="fill_parent"
+            android:layout_width="fill_parent"
+            android:paddingLeft="5dip"
+            android:layout_weight="5"
+            android:id="@+id/contact_list_item_mobile"
+            android:textColor="@color/black_block_list_text_color"
+            android:singleLine="true"
+            android:textSize="20dip"
+        />
+    
+</LinearLayout>

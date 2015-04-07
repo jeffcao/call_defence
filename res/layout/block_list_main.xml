@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/app_bg"
+    android:orientation="vertical" >
+	
+    <!-- <LinearLayout 
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:orientation="horizontal"
+        android:background="@drawable/top_back">
+        
+        <View 
+        	android:layout_height="fill_parent"
+        	android:layout_width="fill_parent"
+        	android:layout_weight="1"    
+        />
+        
+        <Button 
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/block_list_main_clear_log"
+            android:layout_marginRight="7.5dip"
+            android:background="@drawable/clear_block_selector"
+            android:layout_gravity="center"
+          
+        />
+        
+    </LinearLayout> -->
+    
+   	<RelativeLayout 
+   	    android:layout_height="fill_parent"
+   	    android:layout_width="fill_parent"
+   	    android:layout_weight="1"
+   	    android:orientation="vertical"
+   	    android:background="@color/app_bg">
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/bt_help"
+            android:background="@drawable/top_back3"
+            android:gravity="center"
+            >
+            <Button 
+                android:layout_width= "wrap_content"  
+                android:layout_height="wrap_content"  
+              android:gravity="center"
+              
+                
+                android:textSize="18sp"
+                android:background="@drawable/block_call_bt2"
+                android:id="@+id/block_call_bt"
+                />
+
+            <Button
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+              
+                android:textSize="18sp"
+              
+                 android:id="@+id/block_sms_bt"
+                 android:background="@drawable/block_sms_bt1"
+                 />
+
+			</LinearLayout>
+        <TextView android:layout_width="fill_parent" android:layout_height="0dip" android:background="#ccc" android:layout_below="@id/bt_help" android:id="@+id/tv_help"/>
+   	    <ListView 
+   	        	android:layout_below="@id/tv_help"
+                android:layout_height="fill_parent"
+                android:layout_width="fill_parent"
+                 android:divider="@color/list_line"
+                 android:dividerHeight="0.5dip"
+                 android:cacheColorHint="@null"
+                android:id="@+id/block_list_main_list_view"
+            />
+   	     <ListView 
+   	        	android:layout_below="@id/tv_help"
+                android:layout_height="fill_parent"
+                android:layout_width="fill_parent"
+                android:visibility="invisible"
+                 android:divider="@color/list_line"
+                 android:dividerHeight="0.5dip"
+                android:id="@+id/block_list_main_list_sms"
+            />
+   	    
+   	   <TextView 
+                android:layout_height="fill_parent"
+                android:layout_width="fill_parent"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:id="@+id/block_list_main_no_black"
+                android:text="暂无来电拦截记录"
+                android:visibility="invisible"
+                android:textSize="@dimen/no_black_block_text_size"
+            />
+   	    <TextView 
+                android:layout_height="fill_parent"
+                android:layout_width="fill_parent"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:id="@+id/block_list_no_sms"
+                android:text="暂无短信拦截记录"
+                android:visibility="gone"
+                android:textSize="@dimen/no_black_block_text_size"
+            />
+   	   
+   	</RelativeLayout>
+    
+   	
+   	  <Button  android:layout_width="fill_parent" 
+   	      android:layout_height="45dip" 
+   	     android:text="清除日志"
+   	      android:id="@+id/block_list_main_clear_log"/>  
+   	    
+  
+   	<!-- <ImageView 
+   	    android:layout_height="wrap_content"
+   	    android:layout_width="fill_parent"
+   	    android:id="@+id/block_list_main_ad"
+   	    android:background="@drawable/embmarket_entry"
+   	/> -->
+  
+</LinearLayout>

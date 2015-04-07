@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="@color/list_bg">
+	
+    <LinearLayout 
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:orientation="horizontal"
+        android:background="@drawable/top_back">
+    </LinearLayout>
+	
+    <ScrollView 
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent">
+        
+        <LinearLayout 
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:orientation="vertical">
+    
+            <TextView 
+                android:layout_height="43dip"
+                android:layout_width="fill_parent"
+                android:textColor="@color/black"
+                android:text="@string/fire_mode"
+                android:textSize="20dip"
+                android:gravity="center_vertical"
+                android:background="@drawable/tiltle_bg"
+                android:paddingLeft="10dip"/>
+            
+            <RelativeLayout 
+		        android:layout_height="30dip"
+		        android:layout_width="fill_parent"
+		        
+		        android:background="@drawable/set_linear_selector"
+		        android:id="@+id/set_main_black_linear"
+		        android:paddingLeft="10dip"
+		        android:paddingRight="10dip">
+		        
+		        <TextView 
+		            android:layout_height="wrap_content"
+		            android:layout_width="fill_parent"
+		            android:layout_weight="1"
+		            android:text="@string/set_main_fire_mode_black"
+		            android:textColor="@color/black"
+		           android:layout_centerVertical="true"
+		            android:textSize="17dip"/>
+		        
+		        <RadioButton 
+		            android:layout_height="30dip"
+		            android:layout_width="wrap_content"
+		            android:id="@+id/set_main_fire_mode_black"
+		            android:clickable="false"
+		            android:layout_alignParentRight="true"
+		           android:gravity="center_vertical"
+		          
+		        />
+		        
+		    </RelativeLayout>
+		    
+            <RelativeLayout 
+		        android:layout_height="30dip"
+		        android:layout_width="fill_parent"
+		        
+		        android:background="@drawable/set_linear_selector"
+		        android:id="@+id/set_main_contact_linear"
+		        android:paddingLeft="10dip"
+		        android:paddingRight="10dip">
+		        
+		        <TextView 
+		            android:layout_height="wrap_content"
+		            android:layout_width="fill_parent"
+		            android:layout_weight="1"
+		            android:text="@string/set_main_fire_mode_contact"
+		            android:textColor="@color/black"
+		            android:layout_centerVertical="true"
+		            android:textSize="17dip"/>
+		        
+		        <RadioButton 
+		            android:layout_height="30dip"
+		            android:layout_width="wrap_content"
+		            android:id="@+id/set_main_fire_mode_contact"
+		            android:clickable="false"
+		            android:layout_alignParentRight="true"
+		            
+		        />
+		        
+		    </RelativeLayout>
+		    
+            <RelativeLayout 
+		        android:layout_height="30dip"
+		        android:layout_width="fill_parent"
+		       
+		        android:background="@drawable/set_linear_selector"
+		        android:id="@+id/set_main_all_linear"
+		        android:paddingLeft="10dip"
+		        android:paddingRight="10dip">
+		        
+		        <TextView 
+		            android:layout_height="wrap_content"
+		            android:layout_width="fill_parent"
+		            android:layout_weight="1"
+		            android:text="@string/set_main_fire_mode_all"
+		            android:textColor="@color/black"
+		            android:layout_centerVertical="true"
+		            android:textSize="17dip"/>
+		        
+		        <RadioButton 
+		            android:layout_height="30dip"
+		            android:layout_width="wrap_content"
+		            android:id="@+id/set_main_fire_mode_all"
+		            android:clickable="false"
+		           android:layout_alignParentRight="true"
+		        />
+		        
+		    </RelativeLayout>
+            
+		    
+		    
+		    <TextView 
+                android:layout_height="43dip"
+                android:layout_width="fill_parent"
+                android:textColor="@color/black"
+                android:text="@string/set_main_block_voice"
+                android:textSize="20dip"
+                android:gravity="center_vertical"
+                android:background="@drawable/tiltle_bg"
+                android:paddingLeft="10dip"
+		        android:paddingRight="10dip"/>
+		    
+		    <RelativeLayout 
+		        android:layout_height="30dip"
+		        android:layout_width="fill_parent"
+		        
+		        android:background="@drawable/set_linear_selector"
+		        android:id="@+id/set_main_busy_linear"
+		        android:paddingLeft="10dip"
+		        android:paddingRight="10dip">
+		        
+		        <TextView 
+		            android:layout_height="wrap_content"
+		            android:layout_width="fill_parent"
+		            android:layout_weight="1"
+		            android:text="@string/set_main_busy_busy"
+		            android:textColor="@color/black"
+		            android:layout_centerVertical="true"
+		            android:textSize="17dip"/>
+		        
+		        <RadioButton 
+		            android:layout_height="30dip"
+		            android:layout_width="wrap_content"
+		            android:id="@+id/set_main_busy_busy"
+		            android:clickable="false"
+		            android:layout_alignParentRight="true"
+		        />
+		        
+		    </RelativeLayout>
+		    
+		    <RelativeLayout 
+		        android:layout_height="30dip"
+		        android:layout_width="fill_parent"
+		      
+		        android:background="@drawable/set_linear_selector"
+		        android:id="@+id/set_main_close_linear"
+		        android:paddingLeft="10dip"
+		        android:paddingRight="10dip">
+		        
+		        <TextView 
+		            android:layout_height="wrap_content"
+		            android:layout_width="fill_parent"
+		            android:layout_weight="1"
+		            android:text="@string/set_main_busy_close"
+		            android:textColor="@color/black"
+		            android:layout_centerVertical="true"
+		            android:textSize="17dip"/>
+		        
+		        <RadioButton 
+		            android:layout_height="30dip"
+		            android:layout_width="wrap_content"
+		            android:id="@+id/set_main_busy_close"
+		            android:clickable="false"
+		            android:layout_alignParentRight="true"
+		        />
+		        
+		    </RelativeLayout>
+		    
+		    <RelativeLayout 
+		        android:layout_height="30dip"
+		        android:layout_width="fill_parent"
+		       
+		        android:background="@drawable/set_linear_selector"
+		        android:id="@+id/set_main_number_linear"
+		        android:paddingLeft="10dip"
+		        android:paddingRight="10dip">
+		        
+		        <TextView 
+		            android:layout_height="wrap_content"
+		            android:layout_width="fill_parent"
+		            android:layout_weight="1"
+		            android:text="@string/set_main_busy_number"
+		            android:textColor="@color/black"
+		            android:layout_centerVertical="true"
+		            android:textSize="17dip"/>
+		        
+		        <RadioButton 
+		            android:layout_height="30dip"
+		            android:layout_width="wrap_content"
+		            android:id="@+id/set_main_busy_number"
+		            android:clickable="false"
+		            android:layout_alignParentRight="true"
+		        />
+		        
+		    </RelativeLayout>
+		    
+		    <RelativeLayout 
+		        android:layout_height="30dip"
+		        android:layout_width="fill_parent"
+		       
+		        android:background="@drawable/set_linear_selector"
+		        android:id="@+id/set_main_die_linear"
+		        android:paddingLeft="10dip"
+		        android:paddingRight="10dip">
+		        
+		        <TextView 
+		            android:layout_height="wrap_content"
+		            android:layout_width="fill_parent"
+		            android:layout_weight="1"
+		            android:text="@string/set_main_busy_die"
+		            android:textColor="@color/black"
+		            android:layout_centerVertical="true"
+		            android:textSize="17dip"/>
+		        
+		        <RadioButton 
+		            android:layout_height="30dip"
+		            android:layout_width="wrap_content"
+		            android:id="@+id/set_main_busy_die"
+		            android:clickable="false"
+		            android:layout_alignParentRight="true"
+		        />
+		        
+		    </RelativeLayout>
+		    
+		    
+		    
+		    <View android:layout_height="1dip"
+		        android:layout_width="fill_parent"
+		        android:background="@color/list_line"/>
+		    <LinearLayout 
+		        android:layout_height="wrap_content"
+		        android:layout_width="fill_parent"
+		        android:orientation="horizontal"
+		        android:id="@+id/set_main_block_toast_linear"
+		        android:background="@drawable/set_linear_selector"
+		        android:paddingLeft="10dip"
+		        android:paddingRight="10dip">
+		        
+		        <TextView 
+		            android:layout_height="wrap_content"
+		            android:layout_width="fill_parent"
+		            android:layout_weight="1"
+		            android:textColor="@color/black"
+		            android:text="@string/set_main_block_toast"
+		            android:textSize="20dip"
+		        />
+		        
+		        <CheckBox 
+		            android:layout_height="wrap_content"
+		            android:layout_width="wrap_content"
+		            android:id="@+id/set_main_block_toast"
+		            android:clickable="false"/>
+		        
+		    </LinearLayout>
+		    <View android:layout_height="1dip"
+		        android:layout_width="fill_parent"
+		        android:background="@color/list_line"/>
+		    <LinearLayout 
+		        android:layout_height="wrap_content"
+		        android:layout_width="fill_parent"
+		        android:orientation="horizontal"
+		        android:id="@+id/set_main_block_record_linear"
+		        android:background="@drawable/set_linear_selector"
+		        android:paddingLeft="10dip"
+		        android:paddingRight="10dip">
+		        
+		        <TextView 
+		            android:layout_height="wrap_content"
+		            android:layout_width="fill_parent"
+		            android:layout_weight="1"
+		            android:textColor="@color/black"
+		            android:text="@string/set_main_block_record"
+		            android:textSize="20dip"
+		        />
+		        
+		        <CheckBox 
+		            android:layout_height="wrap_content"
+		            android:layout_width="wrap_content"
+		            android:id="@+id/set_main_block_record"
+		            android:clickable="false"
+		           	/>
+		        
+		    </LinearLayout>
+		    <View android:layout_height="1dip"
+		        android:layout_width="fill_parent"
+		        android:background="@color/list_line"/>
+		</LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

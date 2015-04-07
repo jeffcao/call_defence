@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+     android:background="@drawable/set_linear_selector"
+   
+    >
+  <!--   <ImageView  android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        android:src="@drawable/sms_logo" 
+        android:layout_marginLeft="10dip"
+        android:id="@+id/sms_list_help"
+        android:layout_marginTop="15dip"/> -->
+    <TextView 
+        android:layout_width="wrap_content"  
+        android:layout_height="wrap_content" 
+         android:id="@+id/block_sms_number"
+      
+         android:text="12345678910"
+         android:textSize="@dimen/name_size"
+         android:layout_marginTop="5dip"
+         android:textColor="@color/black"
+        android:layout_marginLeft="10dip"
+         />
+    <TextView 
+        android:layout_width="wrap_content"  
+        android:layout_height="wrap_content" 
+         android:id="@+id/block_sms_time"
+         android:layout_marginRight="15dip"
+         android:text="2012-8-8 13:55"
+         android:layout_alignParentRight="true"
+         android:layout_marginTop="5dip"
+         android:textColor="@color/time_or_content"
+         android:textSize="@dimen/number_size"
+         />
+   
+    <TextView 
+        
+        android:layout_width="fill_parent"  
+        android:layout_height="wrap_content" 
+         android:id="@+id/block_sms_contnet"
+         android:layout_marginRight="15dip"
+         android:text="短信内容"
+         android:textColor="@color/time_or_content"
+         android:layout_below="@id/block_sms_number"
+         android:paddingLeft="10dip"
+         android:paddingRight="15dip"
+         android:textSize="@dimen/number_size"
+         />
+<TextView android:layout_width="fill_parent" android:layout_height="5dip" android:background="@drawable/set_linear_selector" android:layout_below="@id/block_sms_contnet"/>
+</RelativeLayout>
